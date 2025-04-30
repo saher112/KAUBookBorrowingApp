@@ -29,8 +29,8 @@ public static class LocationService
                 // Get distance in meters
                 double distanceInMeters = GetDistanceInKm(userLat, userLon, kauLat, kauLon) * 1000;
 
-                // ✅ Compare to 5000 meters (5 km)
-                return distanceInMeters <= 5000;
+                // Compare to 5000 meters (6.2 km)
+                return distanceInMeters <= 6200;
             }
         }
         catch
