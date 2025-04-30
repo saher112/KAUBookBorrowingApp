@@ -73,9 +73,9 @@ namespace KAUBookBorrowingApp
             double finalTotal = total - discountAmount;
 
             string resultText = $"Total before discount: {total} SAR\n" +
-                                $" Discount:  {discount * 100}% = {discountAmount} SAR\n" +
-                                $" \nFinal Total: {finalTotal} SAR\n" +
-                                $"{(isInKAU ? "\n ✅ Inside KAU ( Discount Applied )" : "\n   ❌ Outside KAU (No Discount)")}";
+                                $"Discount:  {discount * 100}% = {discountAmount} SAR\n" +
+                                $"Final Total: {finalTotal} SAR\n" +
+                                $"{(isInKAU ? "\n ✅ Inside KAU ( Discount Applied )" : "❌ Outside KAU (No Discount)")}";
 
             
             SummaryForm summaryForm = new SummaryForm();
